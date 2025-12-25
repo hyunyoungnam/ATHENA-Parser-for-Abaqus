@@ -1,0 +1,20 @@
+# vtk DataFile Version 2.0
+Abaqus INP File - Parsed Mesh Data
+ASCII
+
+DATASET UNSTRUCTURED_GRID
+POINTS 1 float
+0.000000e+00 -6.123234e-16 4.000000e+01
+
+CELLS 0 0
+
+CELL_TYPES 0
+
+POINT_DATA 1
+SCALARS AbaqusNodeID int 1
+LOOKUP_TABLE default
+1
+
+CELL_DATA 0
+SCALARS AbaqusElementID int 1
+LOOKUP_TABLE default

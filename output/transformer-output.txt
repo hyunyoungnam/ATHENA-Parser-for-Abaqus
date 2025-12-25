@@ -1,0 +1,85 @@
+================================================================================
+ATHENA Parser for Abaqus - Transformer Output (IR Format)
+================================================================================
+
+This file shows the Intermediate Representation (IR) from the transformer.
+Geometry data (NODE, ELEMENT) shows placeholders - actual data is in VTK file.
+
+SUMMARY
+--------------------------------------------------------------------------------
+Geometry (VTK):
+  File: geometry.vtk
+  Nodes: 1
+  Elements: 0
+
+Geometry Metadata:
+  total_node_sets: 1
+  total_element_sets: 1
+  total_surfaces: 1
+  total_instances: 2
+  total_sections: 2
+
+Non-Geometry:
+  total_materials: 1
+  total_boundary_conditions: 6
+  total_loads: 1
+
+================================================================================
+
+GEOMETRY METADATA
+--------------------------------------------------------------------------------
+
+SECTIONS:
+
+  Section 1:
+    Command: SHELL SECTION
+    Data: [['2.', '5']]
+
+  Section 2:
+    Command: SOLID SECTION
+    Data: [[',']]
+
+NODE SETS:
+  NSET_1: 1 nodes
+    Nodes: [1]
+
+ELEMENT SETS:
+  ELSET_1: 3 elements
+    Elements: [1, 154, 1]
+
+SURFACES:
+  SURFACE_1: SURFACE
+
+INSTANCES:
+  INSTANCE_1: INSTANCE
+  END: END INSTANCE
+
+================================================================================
+
+NON-GEOMETRY DATA
+--------------------------------------------------------------------------------
+
+MATERIALS:
+  Material_1: MATERIAL
+
+BOUNDARY CONDITIONS:
+  Node Set: Set-2, Data: [1, 1]
+  Node Set: Set-2, Data: [2, 2]
+  Node Set: Set-2, Data: [3, 3, -1.0]
+  Node Set: Set-2, Data: [4, 4]
+  Node Set: Set-2, Data: [5, 5]
+  Node Set: Set-2, Data: [6, 6]
+
+LOADS:
+  Type: DSLOAD, Data: ['_PickedSurf11', 'P', '0.01']
+
+================================================================================
+ALL SECTIONS FOUND
+--------------------------------------------------------------------------------
+Geometry: ['NODE', 'ELEMENT']
+Geometry Metadata: ['NODE', 'ELEMENT', 'NSET', 'ELSET', 'SHELL SECTION', 'SOLID SECTION', 'INSTANCE', 'END INSTANCE', 'SURFACE']
+Non-Geometry: ['HEADING', 'PREPRINT', 'PART', 'END PART', 'ASSEMBLY', 'MPC', 'TIE', 'END ASSEMBLY', 'MATERIAL', 'DENSITY', 'ELASTIC', 'STEP', 'STATIC', 'BOUNDARY', 'DSLOAD', 'RESTART', 'OUTPUT', 'END STEP', 'DYNAMIC']
+
+================================================================================
+END OF PARSED OUTPUT
+================================================================================
